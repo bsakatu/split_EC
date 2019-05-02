@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name bsakatu_parts)(type KiCad)(uri ${KIPRJMOD}/kicad_parts_bsakatu.pretty)(options "")(descr "")(disabled))
+)
