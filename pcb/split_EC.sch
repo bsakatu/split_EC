@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:split_RF-cache
+LIBS:split_EC-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -457,12 +457,12 @@ RESET button
 $Comp
 L power:VCC #PWR014
 U 1 1 5C8A614A
-P 1800 5625
-F 0 "#PWR014" H 1800 5475 50  0001 C CNN
-F 1 "VCC" H 1800 5775 50  0000 C CNN
-F 2 "" H 1800 5625 50  0001 C CNN
-F 3 "" H 1800 5625 50  0001 C CNN
-	1    1800 5625
+P 1525 5675
+F 0 "#PWR014" H 1525 5525 50  0001 C CNN
+F 1 "VCC" H 1525 5825 50  0000 C CNN
+F 2 "" H 1525 5675 50  0001 C CNN
+F 3 "" H 1525 5675 50  0001 C CNN
+	1    1525 5675
 	-1   0    0    -1  
 $EndComp
 Text GLabel 8150 1900 0    50   Input ~ 0
@@ -479,78 +479,59 @@ NoConn ~ 7950 4675
 $Comp
 L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 5CF7D2BA
-P 1775 6550
-F 0 "JP3" H 1775 6630 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1775 6450 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1775 6550 50  0001 C CNN
-F 3 "~" H 1775 6550 50  0001 C CNN
-	1    1775 6550
+P 1825 7025
+F 0 "JP3" H 1825 7105 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1825 6925 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 1825 7025 50  0001 C CNN
+F 3 "~" H 1825 7025 50  0001 C CNN
+	1    1825 7025
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 5CFB31ED
-P 1775 6050
-F 0 "JP1" H 1775 6130 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1775 5950 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1775 6050 50  0001 C CNN
-F 3 "~" H 1775 6050 50  0001 C CNN
-	1    1775 6050
+P 1825 6525
+F 0 "JP1" H 1825 6605 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1825 6425 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1825 6525 50  0001 C CNN
+F 3 "~" H 1825 6525 50  0001 C CNN
+	1    1825 6525
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP2
 U 1 1 5CFA5A9D
-P 1775 6350
-F 0 "JP2" H 1775 6430 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1775 6250 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1775 6350 50  0001 C CNN
-F 3 "~" H 1775 6350 50  0001 C CNN
-	1    1775 6350
+P 1825 6825
+F 0 "JP2" H 1825 6905 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1825 6725 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1825 6825 50  0001 C CNN
+F 3 "~" H 1825 6825 50  0001 C CNN
+	1    1825 6825
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 5E27750F
-P 1275 7150
-F 0 "R3" V 1355 7150 50  0000 C CNN
-F 1 "4.7k" V 1275 7150 50  0000 C CNN
-F 2 "bsakatu_parts:R_SMD_0603_1608_HandSolder" V 1205 7150 50  0001 C CNN
-F 3 "~" H 1275 7150 50  0001 C CNN
-	1    1275 7150
+P 1200 6175
+F 0 "R3" V 1280 6175 50  0000 C CNN
+F 1 "4.7k" V 1200 6175 50  0000 C CNN
+F 2 "bsakatu_parts:R_SMD_0603_1608_HandSolder" V 1130 6175 50  0001 C CNN
+F 3 "~" H 1200 6175 50  0001 C CNN
+	1    1200 6175
 	1    0    0    -1  
 $EndComp
-Text GLabel 1125 6550 0    50   BiDi ~ 0
+Text GLabel 850  7025 0    50   BiDi ~ 0
 DATA
-Text GLabel 1125 6350 0    50   Output ~ 0
+Text GLabel 850  6825 0    50   Output ~ 0
 SDA
-Text GLabel 1125 6050 0    50   Input ~ 0
+Text GLabel 850  6525 0    50   Input ~ 0
 SCL
 Wire Wire Line
-	1125 6550 1625 6550
+	2175 6825 2175 6625
 Wire Wire Line
-	2125 6350 2125 6150
+	2175 6625 2575 6625
 Wire Wire Line
-	2125 6150 2525 6150
-Wire Wire Line
-	1925 6350 2125 6350
-$Comp
-L Device:R R4
-U 1 1 5EDF6C5C
-P 1475 7150
-F 0 "R4" V 1555 7150 50  0000 C CNN
-F 1 "4.7k" V 1475 7150 50  0000 C CNN
-F 2 "bsakatu_parts:R_SMD_0603_1608_HandSolder" V 1405 7150 50  0001 C CNN
-F 3 "~" H 1475 7150 50  0001 C CNN
-	1    1475 7150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1275 7350 1475 7350
-Wire Wire Line
-	1475 7350 1475 7300
-Wire Wire Line
-	1275 7350 1275 7300
+	1975 6825 2175 6825
 $Comp
 L Device:R R2
 U 1 1 5F35C80A
@@ -563,37 +544,34 @@ F 3 "~" H 2000 2400 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1925 6050 2525 6050
+	1975 6525 2575 6525
 Wire Wire Line
-	1925 6550 2125 6550
+	1975 7025 2175 7025
 Wire Wire Line
-	2125 6550 2125 6350
-Connection ~ 2125 6350
+	2175 7025 2175 6825
+Connection ~ 2175 6825
 $Comp
 L power:GND #PWR023
 U 1 1 5DD8A23C
-P 2300 7400
-F 0 "#PWR023" H 2300 7150 50  0001 C CNN
-F 1 "GND" H 2300 7250 50  0000 C CNN
-F 2 "" H 2300 7400 50  0001 C CNN
-F 3 "" H 2300 7400 50  0001 C CNN
-	1    2300 7400
+P 2375 7325
+F 0 "#PWR023" H 2375 7075 50  0001 C CNN
+F 1 "GND" H 2375 7175 50  0000 C CNN
+F 2 "" H 2375 7325 50  0001 C CNN
+F 3 "" H 2375 7325 50  0001 C CNN
+	1    2375 7325
 	1    0    0    -1  
 $EndComp
-Connection ~ 1475 7350
 $Comp
 L keyboard_parts:PTC PTC2
 U 1 1 5FADC39C
-P 2100 5675
-F 0 "PTC2" H 2100 5755 50  0000 C CNN
-F 1 "0ZCG0050AF2C" H 2100 5575 50  0000 C CNN
-F 2 "bsakatu_parts:PTC_0ZCG_1812_4532" V 2100 5675 60  0001 C CNN
-F 3 "" V 2100 5675 60  0000 C CNN
-	1    2100 5675
+P 1950 5975
+F 0 "PTC2" H 1950 6055 50  0000 C CNN
+F 1 "0ZCG0050AF2C" H 1950 5875 50  0000 C CNN
+F 2 "bsakatu_parts:PTC_0ZCG_1812_4532" V 1950 5975 60  0001 C CNN
+F 3 "" V 1950 5975 60  0000 C CNN
+	1    1950 5975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 5675 2350 5675
 Wire Wire Line
 	3200 3950 3600 3950
 $Comp
@@ -657,20 +635,6 @@ Text Label 1550 1750 0    50   ~ 0
 CC1
 Text Label 1550 1850 0    50   ~ 0
 CC2
-Wire Wire Line
-	1125 6050 1275 6050
-Wire Wire Line
-	1125 6350 1475 6350
-Connection ~ 1275 6050
-Wire Wire Line
-	1275 6050 1625 6050
-Connection ~ 1475 6350
-Wire Wire Line
-	1475 6350 1625 6350
-Wire Wire Line
-	1850 5675 1800 5675
-Wire Wire Line
-	1800 5675 1800 5625
 Text Notes 8500 5275 2    50   ~ 0
 *C4 and C5 are need either, not both. These are definition for reversible PCB usage.
 Text Notes 10725 4325 2    50   ~ 0
@@ -879,36 +843,21 @@ F 3 "" H 6425 1925 50  0001 C CNN
 	1    6425 1725
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 6550 2300 7350
-Wire Wire Line
-	1275 6050 1275 7000
-Wire Wire Line
-	1475 6350 1475 7000
-Wire Wire Line
-	1475 7350 2300 7350
-Connection ~ 2300 7350
-Wire Wire Line
-	2300 7350 2300 7400
-Wire Wire Line
-	2450 5675 2450 6350
-Wire Wire Line
-	2450 6350 2525 6350
 $Comp
 L kbd_parts:AudioJack_TRRS_SwitchTR1 J4
 U 1 1 5EC875F0
-P 2800 6400
-F 0 "J4" H 2800 6875 50  0000 C CNN
-F 1 "TRRS jack" H 2800 6150 50  0000 C CNN
-F 2 "bsakatu_parts:Jack_3.5mm_CUI_SJ-43504-SMT_Horizontal" H 2750 6550 50  0001 C CNN
-F 3 "~" H 2750 6550 50  0001 C CNN
-	1    2800 6400
+P 2850 6875
+F 0 "J4" H 2850 7350 50  0000 C CNN
+F 1 "TRRS jack" H 2850 6625 50  0000 C CNN
+F 2 "bsakatu_parts:Jack_3.5mm_CUI_SJ-43504-SMT_Horizontal" H 2800 7025 50  0001 C CNN
+F 3 "~" H 2800 7025 50  0001 C CNN
+	1    2850 6875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2525 6550 2300 6550
-NoConn ~ 2525 6250
-NoConn ~ 2525 6450
+	2575 7025 2375 7025
+NoConn ~ 2575 6725
+NoConn ~ 2575 6925
 Wire Wire Line
 	2000 1750 2000 2250
 Wire Wire Line
@@ -1079,19 +1028,14 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5CD3C296
-P 2725 5625
-F 0 "#FLG02" H 2725 5700 50  0001 C CNN
-F 1 "PWR_FLAG" H 2725 5775 50  0000 C CNN
-F 2 "" H 2725 5625 50  0001 C CNN
-F 3 "~" H 2725 5625 50  0001 C CNN
-	1    2725 5625
+P 2375 5975
+F 0 "#FLG02" H 2375 6050 50  0001 C CNN
+F 1 "PWR_FLAG" H 2375 6125 50  0000 C CNN
+F 2 "" H 2375 5975 50  0001 C CNN
+F 3 "~" H 2375 5975 50  0001 C CNN
+	1    2375 5975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2725 5625 2725 5675
-Wire Wire Line
-	2725 5675 2450 5675
-Connection ~ 2450 5675
 $Comp
 L power:PWR_FLAG #FLG06
 U 1 1 5CD5285A
@@ -1114,4 +1058,54 @@ F 3 "" H 10950 6300 50  0001 C CNN
 	1    10950 6300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2375 7025 2375 7325
+Wire Wire Line
+	850  6525 1200 6525
+Wire Wire Line
+	1400 6025 1400 5975
+Wire Wire Line
+	2375 5975 2375 6825
+Wire Wire Line
+	1200 6025 1200 5975
+Wire Wire Line
+	1200 5975 1400 5975
+Wire Wire Line
+	2375 6825 2575 6825
+Wire Wire Line
+	2200 5975 2375 5975
+Wire Wire Line
+	850  7025 1675 7025
+Wire Wire Line
+	850  6825 1400 6825
+Wire Wire Line
+	1200 6325 1200 6525
+Connection ~ 1200 6525
+Wire Wire Line
+	1200 6525 1675 6525
+Wire Wire Line
+	1400 6325 1400 6825
+Connection ~ 1400 6825
+Wire Wire Line
+	1400 6825 1675 6825
+$Comp
+L Device:R R4
+U 1 1 5EDF6C5C
+P 1400 6175
+F 0 "R4" V 1480 6175 50  0000 C CNN
+F 1 "4.7k" V 1400 6175 50  0000 C CNN
+F 2 "bsakatu_parts:R_SMD_0603_1608_HandSolder" V 1330 6175 50  0001 C CNN
+F 3 "~" H 1400 6175 50  0001 C CNN
+	1    1400 6175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1525 5675 1525 5975
+Connection ~ 1525 5975
+Wire Wire Line
+	1525 5975 1700 5975
+Wire Wire Line
+	1400 5975 1525 5975
+Connection ~ 1400 5975
+Connection ~ 2375 5975
 $EndSCHEMATC
